@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_learn/101/app_bar_learn.dart';
 
 void main() {
@@ -14,8 +15,33 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark().copyWith(
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
+          backgroundColor: Colors.red,
+          elevation: 0,
+        ),
+      ),
       home: const AppBarLearn(),
     );
   }
 }
+
+//Material App, Theme içerisine copy with ekleyerek bundan sonraki tüm sayfaların temalarını ve özelliklerini 
+//buradan ayarlayabiliriz
+/*
+MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData.dark().copyWith(
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
+          backgroundColor: Colors.red,
+          elevation: 0,
+        ),
+      ),
+      home: const AppBarLearn(),
+    );
+*/
