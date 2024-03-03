@@ -21,7 +21,7 @@ class AppBarLearn extends StatelessWidget {
               onPressed: () {}, icon: const Icon(Icons.access_alarms_sharp)),
         ],
         actionsIconTheme: const IconThemeData(color: Colors.green),
-        //arka planı transparan yaparak ve elevation 0 yaparak app bar sayfa ile bütünleşir
+        // arka planı transparan yaparak ve elevation 0 yaparak app bar sayfa ile bütünleşir
         backgroundColor: Colors.transparent,
         elevation: 0,
         //Telefonun en üst kısmındaki kulanıcı bilgilerini ayarlar
