@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_learn/101/color_learn.dart';
+import 'package:flutter_learn/101/stateless_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      home: const ColorLearn(),
+      home: const StatelessLearn(),
     );
   }
 }
