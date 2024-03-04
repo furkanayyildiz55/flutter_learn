@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_learn/101/padding_learn.dart';
+import 'package:flutter_learn/101/card_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      home: const PaddingLearn(),
+      home: const CardLearn(),
     );
   }
 }
