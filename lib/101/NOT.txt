@@ -1,0 +1,10 @@
+Aseet Klasöründe Neler Tutulur ?
+
+-Localization yani Languange tutulur
+-Proje config dosyaları 
+-Image Dosyaları (png,svg,jpg)
+-Lottie File Dosyaları
+
+**pubspec.yaml dosyasına Asset Eklerken bir tane # silmek yeterlidir
+**Aşağıdaki gibi verilen alanlar asset olarak klasörüm tamamını çeker
+    - assets/png/  
