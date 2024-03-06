@@ -36,6 +36,7 @@ class _IndicatorLearnState extends State<IndicatorLearn> {
       body: Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
         const CenterProgressIndicator(),
         const ConstProgressIndicator(),
+        const LinearProgressIndicator(),
         //LinearProgressIndicator(),
         DownloadProress(
           status: status,

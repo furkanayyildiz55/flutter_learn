@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_learn/101/indicator_learn.dart';
+import 'package:flutter_learn/101/list_tile_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      home: const IndicatorLearn(),
+      home: const ListTileLearn(),
     );
   }
 }
