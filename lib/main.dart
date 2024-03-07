@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_learn/101/stateful_lie_cycle_learn.dart';
+import 'package:flutter_learn/101/text_field_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,23 +13,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData.dark().copyWith(
-        progressIndicatorTheme: const ProgressIndicatorThemeData(
-          color: Colors.white,
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData.dark().copyWith(
+          progressIndicatorTheme: const ProgressIndicatorThemeData(
+            color: Colors.white,
+          ),
+          appBarTheme: const AppBarTheme(
+            centerTitle: true,
+            systemOverlayStyle: SystemUiOverlayStyle.light,
+            backgroundColor: Colors.red,
+            elevation: 0,
+          ),
+          inputDecorationTheme: const InputDecorationTheme(
+              filled: true,
+              // fillColor: Colors.white,
+              iconColor: Colors.amber,
+              border: OutlineInputBorder()),
         ),
-        appBarTheme: const AppBarTheme(
-          centerTitle: true,
-          systemOverlayStyle: SystemUiOverlayStyle.light,
-          backgroundColor: Colors.red,
-          elevation: 0,
-        ),
-      ),
-      home: const StatefullifeCycleLearn(
-        message: "s",
-      ),
-    );
+        home: const TextFieldLearn());
   }
 }
 
