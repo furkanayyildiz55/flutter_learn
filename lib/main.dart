@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_learn/101/page_view_learn.dart';
+import 'package:flutter_learn/101/stateful_lie_cycle_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +26,9 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      home: const PageViewLearn(),
+      home: const StatefullifeCycleLearn(
+        message: "s",
+      ),
     );
   }
 }
