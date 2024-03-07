@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/product/counter_widget.dart';
+import 'package:flutter_learn/product/language/language_items.dart';
 
 class StatefulLearn extends StatefulWidget {
   const StatefulLearn({super.key});
@@ -22,8 +24,16 @@ class _StatefulLearnState extends State<StatefulLearn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Center(child: Text(_countValue.toString())),
+      appBar: AppBar(
+        title: const Text(LanguageItems.wlcomeTitle),
+      ),
+      body: Column(
+        children: [
+          Center(child: Text(_countValue.toString())),
+          const Placeholder(),
+          const CounterWidget()
+        ],
+      ),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -35,6 +45,7 @@ class _StatefulLearnState extends State<StatefulLearn> {
   }
 
   FloatingActionButton _incrementButton() {
+    debugPrint("Floating Action Widget Tekrardan Çizildi");
     return FloatingActionButton(
       onPressed: () {
         updateIncrement(isIncrement: true);
@@ -63,3 +74,8 @@ class _StatefulLearnState extends State<StatefulLearn> {
 
 //* Set state sayesinde build methodu tekrardan tetiklenmektedir
 //* Sadece bu classta kullanılacak verileri _ ile private yapmayı unutmuyoruz !!!
+
+
+//! En Önemli Noktalardan Birisi 
+//! Widget içerisinde birden fazla değişebilir alan oluyor eğer bir alan güncellendiğinde
+//! diğer alanların güncellenmesi gerekmiyor ise bu durumda alanlar farklı stateful widgetlere bölünmelidir 
