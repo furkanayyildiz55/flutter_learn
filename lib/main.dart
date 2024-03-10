@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_learn/101/text_field_learn.dart';
+import 'package:flutter_learn/demos/color_demos_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
               iconColor: Colors.amber,
               border: OutlineInputBorder()),
         ),
-        home: const TextFieldLearn());
+        home: const ColorDemosView());
   }
 }
 
