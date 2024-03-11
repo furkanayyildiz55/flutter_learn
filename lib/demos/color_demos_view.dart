@@ -1,9 +1,12 @@
 // Ekranda  buton ve basınca renk değişimi
 
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class ColorDemosView extends StatefulWidget {
-  const ColorDemosView({super.key});
+  const ColorDemosView({super.key, required this.initialColor});
+  final Color? initialColor;
 
   @override
   State<ColorDemosView> createState() => _ColorDemosViewState();
@@ -19,9 +22,24 @@ class _ColorDemosViewState extends State<ColorDemosView> {
   }
 
   @override
+  void initState() {
+    changeBacgroundColor(widget.initialColor ?? Colors.transparent);
+  }
+
+  @override
+  void didUpdateWidget(covariant ColorDemosView oldWidget) {
+    inspect(widget);
+    if (widget.initialColor != bacgroundColor && widget.initialColor != null) {
+      changeBacgroundColor(widget.initialColor!);
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Alt Widget"),
+      ),
       backgroundColor: bacgroundColor,
       bottomNavigationBar: BottomNavigationBar(onTap: _colorOnTap, items: [
         _bottomNavItem(Colors.red, "Red"),
@@ -54,3 +72,8 @@ class _ColorDemosViewState extends State<ColorDemosView> {
 }
 
 enum myBackroundColors { red, yellow, blue }
+
+
+
+//! inspect bizim için debugta kolaylık sağlar 
+//! içine verilen videgeti açıklar
