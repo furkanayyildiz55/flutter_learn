@@ -8,3 +8,6 @@ Aseet Klasöründe Neler Tutulur ?
 **pubspec.yaml dosyasına Asset Eklerken bir tane # silmek yeterlidir
 **Aşağıdaki gibi verilen alanlar asset olarak klasörüm tamamını çeker
     - assets/png/  
+
+
+UPLABS DEN TASARIM DENE
