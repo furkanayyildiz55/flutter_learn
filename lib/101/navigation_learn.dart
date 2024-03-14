@@ -31,7 +31,6 @@ class _NavigationLearnState extends State<NavigationLearn>
                   NavigateDetailLearn(
                     isOkey: selectedItems.contains(index),
                   ));
-
               if (response is bool) {
                 addSelected(index, response);
               }
