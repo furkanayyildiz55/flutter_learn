@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_learn/101/navigation_learn.dart';
+import 'package:flutter_learn/202/tab_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,16 +22,21 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
             centerTitle: true,
             systemOverlayStyle: SystemUiOverlayStyle.light,
-            backgroundColor: Colors.red,
+            backgroundColor: Colors.black,
             elevation: 0,
           ),
           inputDecorationTheme: const InputDecorationTheme(
-              filled: true,
-              // fillColor: Colors.white,
-              iconColor: Colors.amber,
-              border: OutlineInputBorder()),
+            filled: true,
+            // fillColor: Colors.white,
+            iconColor: Colors.amber,
+            border: OutlineInputBorder(),
+          ),
+          tabBarTheme: const TabBarTheme(indicatorColor: Colors.pinkAccent),
+          bottomAppBarTheme: const BottomAppBarTheme(
+            shape: CircularNotchedRectangle(),
+          ),
         ),
-        home: const NavigationLearn());
+        home: const TabLearn());
   }
 }
 
