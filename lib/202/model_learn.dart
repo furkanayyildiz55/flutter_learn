@@ -1,5 +1,5 @@
 //Model null gelebilir nullable initialize
-class PostModel {
+class PostModel1 {
   int? userId;
   int? id;
   String? title;

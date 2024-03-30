@@ -16,7 +16,7 @@ class _ModelLearnWievState extends State<ModelLearnWiev> {
   @override
   void initState() {
     super.initState();
-    final user1 = PostModel()
+    final user1 = PostModel1()
       ..body = "User1"
       ..id = 1;
     user1.title = "Test";

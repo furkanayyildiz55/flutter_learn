@@ -1,0 +1,12 @@
+
+1- Servis istekleri 
+
+GET : Sadece veri çekmek için kullanılır, url parametreler kullanılır
+POST: Get gibi çalışır ve response döndürür farkı ise içerisine veri alabilmesidir, data gönderilebilir
+DELETE: Geriye data dönmez, birşeyleri silmek için kullanılır
+PUT: Kısaca güncellemek için kullanılır da denebilir
+
+
+Service istekleri için paketler => http, dio
+
+Servisten dönen istekler her zaman modellenmelidir  => json to dart

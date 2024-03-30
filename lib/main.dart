@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_learn/202/model_learn_view.dart';
-import 'package:flutter_learn/202/tab_learn.dart';
+import 'package:flutter_learn/202/service/servide_post_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +36,7 @@ class MyApp extends StatelessWidget {
             shape: CircularNotchedRectangle(),
           ),
         ),
-        home: const ModelLearnWiev());
+        home: const ServicePostLearn());
   }
 }
 
