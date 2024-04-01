@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learn/202/packege/launch_mixin.dart';
-import 'package:flutter_learn/202/packege/loading_bar.dart';
+import 'package:flutter_learn/demos/password_text_field.dart';
 
 class PackageLearnView extends StatefulWidget {
   const PackageLearnView({super.key});
@@ -15,7 +15,7 @@ class _PackageLearnViewState extends State<PackageLearnView>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: const LoadingBar(),
+      body: const PasswordTextField(),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.send_and_archive_rounded, size: 35),
         onPressed: () {
