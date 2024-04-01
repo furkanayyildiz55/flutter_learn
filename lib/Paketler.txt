@@ -1,0 +1,6 @@
+Paketler pubspec.yaml içerisinde dependencies altına eklenir.
+
+
+
+flutter_spinkit: Farklı Loading animasyonları bulunur
+url_launcher   : İnternet sitesi, arama, mesaj, mail gönderme gibi alanlara linkledirme ile yönlendirme sağlar. Native çalışır

@@ -10,3 +10,9 @@ PUT: Kısaca güncellemek için kullanılır da denebilir
 Service istekleri için paketler => http, dio
 
 Servisten dönen istekler her zaman modellenmelidir  => json to dart
+
+
+
+
+https://colornamer.robertcooper.me/
+https://appainter.dev/

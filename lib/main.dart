@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_learn/202/service/service_learn_view.dart';
+import 'package:flutter_learn/202/packege_learn_view.dart';
+import 'package:flutter_learn/202/theme/light_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,28 +15,30 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        theme: ThemeData.dark().copyWith(
-          progressIndicatorTheme: const ProgressIndicatorThemeData(
-            color: Colors.white,
-          ),
-          appBarTheme: const AppBarTheme(
-            centerTitle: true,
-            systemOverlayStyle: SystemUiOverlayStyle.light,
-            backgroundColor: Colors.black,
-            elevation: 0,
-          ),
-          inputDecorationTheme: const InputDecorationTheme(
-            filled: true,
-            // fillColor: Colors.white,
-            iconColor: Colors.amber,
-            border: OutlineInputBorder(),
-          ),
-          tabBarTheme: const TabBarTheme(indicatorColor: Colors.pinkAccent),
-          bottomAppBarTheme: const BottomAppBarTheme(
-            shape: CircularNotchedRectangle(),
-          ),
-        ),
-        home: const ServiceLearn());
+        theme: LightTheme().theme,
+
+        // ThemeData.dark().copyWith(
+        //   progressIndicatorTheme: const ProgressIndicatorThemeData(
+        //     color: Colors.white,
+        //   ),
+        //   appBarTheme: const AppBarTheme(
+        //     centerTitle: true,
+        //     systemOverlayStyle: SystemUiOverlayStyle.light,
+        //     backgroundColor: Colors.black,
+        //     elevation: 0,
+        //   ),
+        //   inputDecorationTheme: const InputDecorationTheme(
+        //     filled: true,
+        //     // fillColor: Colors.white,
+        //     iconColor: Colors.amber,
+        //     border: OutlineInputBorder(),
+        //   ),
+        //   tabBarTheme: const TabBarTheme(indicatorColor: Colors.pinkAccent),
+        //   bottomAppBarTheme: const BottomAppBarTheme(
+        //     shape: CircularNotchedRectangle(),
+        //   ),
+        // ),
+        home: const PackageLearnView());
   }
 }
 

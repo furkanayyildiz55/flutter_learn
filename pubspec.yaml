@@ -31,6 +31,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  #Google
+  url_launcher: ^6.2.4
+
   #Theme/Icon
   cupertino_icons: ^1.0.2
 
