@@ -10,6 +10,7 @@ class LightTheme {
   LightTheme() {
     theme = ThemeData(
         appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.indigoAccent,
             shape: RoundedRectangleBorder(
                 borderRadius:
                     BorderRadius.vertical(bottom: Radius.circular(15)))),

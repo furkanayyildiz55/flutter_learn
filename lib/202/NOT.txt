@@ -16,3 +16,19 @@ Servisten dönen istekler her zaman modellenmelidir  => json to dart
 
 https://colornamer.robertcooper.me/
 https://appainter.dev/
+
+
+
+//EXTENSİON 
+ÖRNEK BİR EXTENSİON KODU 
+Extensiolar genellikle enumlara yazılır,  
+// ignore: constant_identifier_names
+enum ImagePaths { apple_imge }
+
+extension ImagePathsExtension on ImagePaths {
+  String path() {
+    return 'assets/png/$name.png';
+  }
+}
+
+ImagePaths.apple_imge.path() ve yukarıdaki extensionın kullanımı yandaki gibidir. 
