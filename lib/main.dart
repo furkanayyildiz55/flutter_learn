@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/202/image_learn_202.dart';
+import 'package:flutter_learn/202/animated_learn_view.dart';
 import 'package:flutter_learn/202/theme/light_theme.dart';
 
 void main() {
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         //     shape: CircularNotchedRectangle(),
         //   ),
         // ),
-        home: const ImageLearn202());
+        home: const AnimatedLearnView());
   }
 }
 
