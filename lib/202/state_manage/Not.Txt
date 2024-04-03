@@ -1,0 +1,7 @@
+En basit state yönetimi buradaki yönetim şeklidir 
+
+burada yapılan ui kodu ile backend kodlarını ayırmaktır, daha temiz ve okunaklı bir yapı sağlar 
+
+stateful widget için uı kodlarını yazdığımız classa extend edilen sınıfın alıyor ve model adı altında
+oluşturduğumuz başka bir abtract sınıfa entegre ediyoruz ve yeni abstract sınıfımızı ise uı kodlarını yazdığımız 
+sınıfa extend ediyoruz
