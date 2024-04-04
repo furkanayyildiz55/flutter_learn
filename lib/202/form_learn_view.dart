@@ -21,6 +21,7 @@ class _FormLearnViewState extends State<FormLearnView> {
           children: [
             TextFormField(validator: FormFieldValidator().isNotEmpty),
             DropdownButtonFormField<String>(
+              value: "a",
               validator: FormFieldValidator().isNotEmpty,
               items: const [
                 DropdownMenuItem(
