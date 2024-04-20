@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learn/202/cache/shared_manager.dart';
+import 'package:flutter_learn/202/cache/user_model.dart';
 
 class SharedLearn extends StatefulWidget {
   const SharedLearn({super.key});
@@ -23,10 +24,17 @@ class _SharedLearnState extends SharedLearnModel {
         ],
         title: Text(_currentValue.toString()),
       ),
-      body: TextField(
-        onChanged: (value) {
-          _changeValue(value);
-        },
+      body: Column(
+        children: [
+          TextField(
+            onChanged: (value) {
+              _changeValue(value);
+            },
+          ),
+          Expanded(
+            child: _UserListView(),
+          )
+        ],
       ),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -48,6 +56,27 @@ class _SharedLearnState extends SharedLearnModel {
           ),
         ],
       ),
+    );
+  }
+}
+
+class _UserListView extends StatelessWidget {
+  _UserListView();
+
+  final List<User> userItem = UserItems().users;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      itemCount: userItem.length,
+      itemBuilder: (context, index) {
+        return Card(
+          child: ListTile(
+              title: Text(userItem[index].name ?? ""),
+              subtitle: Text(userItem[index].description ?? ""),
+              trailing: Text(userItem[index].url ?? "")),
+        );
+      },
     );
   }
 }
@@ -97,5 +126,17 @@ abstract class SharedLearnModel extends State<SharedLearn> {
         _currentValue = value;
       });
     }
+  }
+}
+
+class UserItems {
+  late final List<User> users;
+  UserItems() {
+    users = [
+      User("Furkan", "furkan Ayyıldız", "furkanayyildiz.com"),
+      User("fu", "fur", "furkan"),
+      User("fu", "fur", "furkan"),
+      User("fu", "fur", "furkan"),
+    ];
   }
 }
