@@ -1,4 +1,4 @@
-import 'package:flutter_learn/202/303/generic_learn.dart';
+import 'package:flutter_learn/303/generic_learn.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
